@@ -1,0 +1,47 @@
+.everyorder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #8a2b06;
+    padding: 1em 0;
+}
+.left{
+    width: 25%;
+    text-align: left;
+}
+.left>h4{
+    margin: 0.5em 0;
+}
+.amount{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.amount>div{
+    color: #8a2b06;
+    font-size: 22px;
+}
+.amount>span{
+    border: 1px solid rgb(162, 162, 162);
+    padding: 0.5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    margin-left: 1.5rem;
+}
+.btn{
+    background-color: white;
+    color: #8a2b06;
+    width: 1em;
+    border: 1px solid #8a2b06;
+    text-align: center;
+    margin: 0 2.5px;
+    display: inline-flex;
+    justify-content: center;
+    border-radius:10px ;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: #8a2b06;
+    color: white;
+}

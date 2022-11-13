@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from 'react';
+import Header from './components/layout/Header';
+import Landing from './components/layout/Landing';
+import Mealscard from './components/layout/Mealscard';
+import Overlay from './components/ui/Overlay';
+import Cartprovider from './context/Cartprovider';
+import Order from './components/ui/Order';
 function App() {
+  const [overlayshow,setoverlay]=useState(false);
+  const hideoverlay=()=>{
+    setoverlay(false)
+  }
+  const showoverlay=()=>{
+    setoverlay(true)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Cartprovider>
+      {overlayshow&&<Overlay overlay={hideoverlay} show={showoverlay}><Order onclose={hideoverlay}></Order></Overlay>}
+      <Header overlay={showoverlay} />
+      <Landing/>
+      <Mealscard/>
+    </Cartprovider>  
+    
   );
 }
 

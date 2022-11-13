@@ -1,0 +1,92 @@
+.card{
+    background-color: white;
+    color: black;
+    padding: 1em 1em;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    max-height: 20rem;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.everyorder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #8a2b06;
+    padding: 1em 0;
+}
+.left{
+    width: 25%;
+    text-align: left;
+}
+.left>h4{
+    margin: 0.5em 0;
+}
+.amount{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.amount>div{
+    color: #8a2b06;
+    font-size: 22px;
+}
+.amount>span{
+    border: 1px solid rgb(162, 162, 162);
+    padding: 0.5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+.btn{
+    background-color: white;
+    color: #8a2b06;
+    width: 1em;
+    border: 1px solid #8a2b06;
+    text-align: center;
+    margin: 0 2.5px;
+    display: inline-flex;
+    justify-content: center;
+    border-radius:10px ;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: #8a2b06;
+    color: white;
+}
+.total{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.confirm{
+    width: 100%;
+    text-align: right;
+}
+.confirm>.btn{
+    padding: 0.5em 2.5em;
+}
+@media (max-width:1025px){
+    .card{
+        width: 30rem !important;
+        bottom: -40%;
+    }
+}
+@media (max-width:768px){
+    .card{
+        width: 30rem !important;
+        bottom: -55%;
+    }
+}
+@media (max-width:600px){
+    .card{
+        width: 20rem !important;
+        bottom: -80%;
+    }
+    .total>h2{
+        font-size: 2rem;
+    }
+}
