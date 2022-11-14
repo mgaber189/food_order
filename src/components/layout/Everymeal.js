@@ -23,7 +23,7 @@ const Everymeal=(props)=>{
     }
     return<>
         <li key={props.meal.id} className={style.info}>
-            <div >
+            <div>
                 <h4>{props.meal.name}</h4>
                 <p>{props.meal.description}</p>
                 <p>${props.meal.price}</p>
