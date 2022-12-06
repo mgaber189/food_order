@@ -26,6 +26,7 @@
 @media (max-width:481px){
     .card{
         width: 15rem !important;
-        bottom: -80%;
+        bottom: -70%;
+        padding: 1em 2em !important;
     }
 }
